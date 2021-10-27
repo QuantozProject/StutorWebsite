@@ -53,4 +53,4 @@ jobs:
           PASSWORD: ${{ secrets.PASSWORD }}
           PORT: ${{ secrets.PORT }}
           script: |
-            cp -a ${{ secrets.PROJECT_PATH }} ${{ secrets.APACHE_PATH }}
+            cp -a ${{ secrets.COPY_PATH }}
