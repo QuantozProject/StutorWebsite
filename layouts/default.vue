@@ -1,10 +1,6 @@
 <template>
-  <div class="px-32 py-12">
+  <div class="h-screen px-32 py-16">
+    <nuxt class="flex flex-col flex-grow h-full relative z-10" />
     <img :src="require('../assets/img/wave.svg')" class="absolute bottom-0 right-0 z-0" />
-    <nuxt class="z-10 relative" />
   </div>
 </template>
-
-<script>
-export default {};
-</script>

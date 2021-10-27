@@ -1,9 +1,16 @@
 <template>
   <div>
-    <h1>about us</h1>
+    <app-header />
+    <h1>About us</h1>
   </div>
 </template>
 
 <script>
-export default {};
+import AppHeader from '~/components/general/AppHeader';
+
+export default {
+  components: {
+    AppHeader,
+  },
+};
 </script>
