@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-primary-lightest text-secondary font-medium;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-bold text-black;
+  }
+
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+}
