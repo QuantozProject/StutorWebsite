@@ -3,8 +3,8 @@
     <h2>Stutor</h2>
     <nav>
       <ul class="flex space-x-16">
-        <li v-for="nav in navigation" :key="nav.id" class="text-primary-default font-bold">
-          <nuxt-link :to="nav.link">
+        <li v-for="nav in navigation" :key="nav.id" :class="{ 'text-primary-default font-bold': isActive(nav.route) }">
+          <nuxt-link :to="nav.route">
             {{ nav.name }}
           </nuxt-link>
         </li>
@@ -17,10 +17,14 @@
 export default {
   data: () => ({
     navigation: [
-      { id: 0, link: '/', name: 'Home' },
-      { id: 1, link: '/', name: 'About us' },
-      { id: 2, link: '/', name: 'Contact' },
+      { id: 0, route: '/', name: 'Home' },
+      { id: 1, route: '/about-us', name: 'About us' },
     ],
   }),
+  methods: {
+    isActive(route) {
+      return route === this.$route.path;
+    },
+  },
 };
 </script>
