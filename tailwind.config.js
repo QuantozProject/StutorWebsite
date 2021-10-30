@@ -2,6 +2,14 @@ module.exports = {
   purge: [],
   darkMode: false,
   theme: {
+    screens: {
+      'sm': '380px',
+      'md': '640px',
+      'lg': '768px',
+      'xl': '1024px',
+      '2xl': '1280px',
+      '3xl': '1536px',
+    },
     colors: {
       primary: {
         default: '#487A71',
@@ -25,8 +33,10 @@ module.exports = {
       base: '14px',
       lg: '16px',
       xl: '18px',
-      '2xl': '40px',
-      '3xl': '60px',
+      '2xl': '20px',
+      '3xl': '30px',
+      '4xl': '40px',
+      '5xl': '60px',
     },
     extend: {
       boxShadow: {
