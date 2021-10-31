@@ -2,23 +2,27 @@
   <div class="flex justify-between items-center">
     <h2>Stutor</h2>
     <nav class="hidden md:block">
-      <ul class="flex space-x-16">
-        <li v-for="nav in navigation" :key="nav.id" :class="{ 'text-primary-default font-bold': isActive(nav.route) }">
-          <nuxt-link :to="nav.route">
-            {{ nav.name }}
-          </nuxt-link>
-        </li>
-      </ul>
+      <navigation :items="navigation" class="flex space-x-16" />
     </nav>
-    <button class="w-10 h-10 rounded-lg text-white bg-primary-default md:hidden" @click="expand()">X</button>
-    <div v-if="menuExpanded" class="absolute w-full p-4 mt-24 rounded-lg shadow-sm">
-      Menu
+    <button class="w-10 h-10 rounded-lg text-white bg-primary-default md:hidden" @click="expand()">
+      <font-awesome-icon icon="bars" />
+    </button>
+    <div
+      v-if="menuExpanded"
+      class="absolute md:hidden inset-x-12 mt-44 p-4 rounded-lg shadow-lg bg-white"
+    >
+      <navigation :items="navigation" class="space-y-2" />
     </div>
   </div>
 </template>
 
 <script>
+import Navigation from '~/components/general/Navigation';
+
 export default {
+  components: {
+    Navigation,
+  },
   data: () => ({
     navigation: [
       { id: 0, route: '/', name: 'Home' },
@@ -27,12 +31,9 @@ export default {
     menuExpanded: false,
   }),
   methods: {
-    isActive(route) {
-      return route === this.$route.path;
-    },
     expand() {
       this.menuExpanded = !this.menuExpanded;
-    }
+    },
   },
 };
 </script>
