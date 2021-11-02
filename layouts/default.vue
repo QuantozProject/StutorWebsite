@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen">
+  <div class="h-screen absolute inset-0">
     <img :src="require('../assets/img/wave.svg')" class="absolute bottom-0 right-0" />
     <nuxt
       class="
