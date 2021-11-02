@@ -11,7 +11,14 @@
         py-16
         relative
         overflow-y-scroll
+        mobile-scroll
       "
     />
   </div>
 </template>
+
+<style scoped>
+.mobile-scroll {
+  -webkit-overflow-scrolling: touch;
+}
+</style>
