@@ -19,6 +19,7 @@
         shadow-lg
         bg-white
         animate-expand-small-big
+        z-10
       "
     >
       <navigation :items="navigation" class="space-y-2" />

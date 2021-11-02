@@ -19,12 +19,12 @@
       </div>
       <div class="flex space-x-8 justify-items-end lg:justify-between">
         <img
-          :src="require('../assets/img/phone.png')"
+          :src="require('~/assets/img/phone.png')"
           alt="phone"
           class="w-60 hidden lg:block 2xl:mb-32 animate-fade-in-down-mob"
         />
         <img
-          :src="require('../assets/img/phone.png')"
+          :src="require('~/assets/img/phone.png')"
           alt="phone"
           class="w-1/4 lg:w-60 hidden 2xl:block mt-32 animate-fade-in-top-mob"
         />

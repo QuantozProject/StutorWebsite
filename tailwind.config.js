@@ -52,6 +52,9 @@ module.exports = {
         1: '1px',
         6: '6px',
       },
+      borderRadius: {
+        large: '2rem',
+      },
       backgroundImage: (theme) => ({
         'auth-background': "url('@/assets/img/wave.svg')",
       }),
