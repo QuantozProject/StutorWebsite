@@ -3,10 +3,10 @@ module.exports = {
   darkMode: false,
   theme: {
     screens: {
-      'sm': '380px',
-      'md': '640px',
-      'lg': '768px',
-      'xl': '1024px',
+      sm: '380px',
+      md: '640px',
+      lg: '768px',
+      xl: '1024px',
       '2xl': '1280px',
       '3xl': '1536px',
     },
@@ -55,6 +55,52 @@ module.exports = {
       backgroundImage: (theme) => ({
         'auth-background': "url('@/assets/img/wave.svg')",
       }),
+      keyframes: {
+        'fade-in-down': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-20px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
+        'fade-in-top-mob': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(300px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
+        'fade-in-down-mob': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-300px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
+        'expand-small-big': {
+          '0%': {
+            transform: 'scale(0.8)',
+          },
+          '100%': {
+            transform: 'scale(1)',
+          },
+        },
+      },
+      animation: {
+        'fade-in-down': 'fade-in-down 1s ease-out',
+        'fade-in-top-mob': 'fade-in-top-mob 1s ease-out',
+        'fade-in-down-mob': 'fade-in-down-mob 1s ease-out',
+        'expand-small-big': 'expand-small-big .2s ease-out',
+      },
     },
   },
   variants: {

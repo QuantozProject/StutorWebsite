@@ -23,6 +23,16 @@
 }
 
 @layer components {
+  .btn {
+    @apply inline-flex px-8 py-2.5 rounded font-semibold text-lg items-center justify-center gap-2;
+
+    &.btn-primary {
+      @apply bg-primary-default text-white;
+      &:hover {
+        @apply bg-primary-light;
+      }
+    }
+  }
 }
 
 @layer utilities {
