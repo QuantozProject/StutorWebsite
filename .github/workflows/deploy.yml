@@ -23,6 +23,17 @@ jobs:
           source: "."
           target: ${{ secrets.PROJECT_PATH }}
           
+      - name: Verify cache
+        uses: appleboy/ssh-action@master
+        with:
+          HOST: ${{ secrets.HOST }}
+          USERNAME: ${{ secrets.USERNAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+          PORT: ${{ secrets.PORT }}
+          script: |
+            cd ${{ secrets.PROJECT_PATH }}
+            npm cache verify
+          
       - name: Download dependencies
         uses: appleboy/ssh-action@master
         with:
