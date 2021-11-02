@@ -9,7 +9,17 @@
     </button>
     <div
       v-if="menuExpanded"
-      class="absolute md:hidden inset-x-12 mt-44 p-4 rounded-lg shadow-lg bg-white"
+      class="
+        absolute
+        md:hidden
+        inset-x-12
+        top-32
+        p-4
+        rounded-lg
+        shadow-lg
+        bg-white
+        animate-expand-small-big
+      "
     >
       <navigation :items="navigation" class="space-y-2" />
     </div>
