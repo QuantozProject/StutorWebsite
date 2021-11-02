@@ -32,6 +32,7 @@ export default {
   fontawesome: {
     icons: {
       solid: ['faBars'],
+      brands: ['faLinkedin'],
     },
   },
 
