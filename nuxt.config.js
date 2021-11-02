@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'stutor-website',
+    title: 'Stutor - Peer to Peer Tutoring',
     htmlAttrs: {
       lang: 'en',
     },

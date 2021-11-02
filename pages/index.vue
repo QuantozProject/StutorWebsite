@@ -17,16 +17,16 @@
           />
         </div>
       </div>
-      <div class="flex space-x-8">
+      <div class="flex space-x-8 justify-items-end lg:justify-between">
         <img
           :src="require('../assets/img/phone.png')"
           alt="phone"
-          class="w-52 hidden lg:block xl:mb-32 animate-fade-in-down-mob"
+          class="w-60 hidden lg:block 2xl:mb-32 animate-fade-in-down-mob"
         />
         <img
           :src="require('../assets/img/phone.png')"
           alt="phone"
-          class="w-52 hidden xl:block mt-32 animate-fade-in-top-mob"
+          class="w-1/4 lg:w-60 hidden 2xl:block mt-32 animate-fade-in-top-mob"
         />
       </div>
     </div>
