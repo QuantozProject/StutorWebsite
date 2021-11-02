@@ -102,7 +102,7 @@ module.exports = {
         'fade-in-down': 'fade-in-down 1s ease-out',
         'fade-in-top-mob': 'fade-in-top-mob 1s ease-out',
         'fade-in-down-mob': 'fade-in-down-mob 1s ease-out',
-        'expand-small-big': 'expand-small-big .2s ease-in-out',
+        'expand-small-big': 'expand-small-big .2s ease-out',
       },
     },
   },

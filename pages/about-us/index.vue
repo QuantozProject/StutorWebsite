@@ -13,10 +13,10 @@
         bg-opacity-90
         p-16
         overflow-y-scroll
-        animate-fade-in-down
+        space-y-12
       "
     >
-      <div class="flex justify-between items-start gap-22 xl:gap-44">
+      <div class="flex justify-between items-start gap-22 xl:gap-44 animate-fade-in-down-mob">
         <div class="space-y-6">
           <h1 class="text-3xl">About Stutor</h1>
           <p>{{ about }}</p>
@@ -27,26 +27,28 @@
           class="w-1/3 hidden md:block"
         />
       </div>
-      <h1 class="text-3xl mt-12">The Team</h1>
-      <div
-        class="
-          grid grid-cols-1
-          md:grid-cols-2
-          lg:grid-cols-3
-          xl:grid-cols-4
-          2xl:grid-cols-6
-          gap-8
-          my-6
-        "
-      >
-        <member
-          v-for="member in team"
-          :key="member.id"
-          :memberName="member.name"
-          :role="member.role"
-          :picture="member.pic"
-          :linkedIn="member.linkedIn"
-        />
+      <div class="animate-fade-in-top-mob">
+        <h1 class="text-3xl">The Team</h1>
+        <div
+          class="
+            grid grid-cols-1
+            md:grid-cols-2
+            lg:grid-cols-3
+            xl:grid-cols-4
+            2xl:grid-cols-6
+            gap-8
+            my-6
+          "
+        >
+          <member
+            v-for="member in team"
+            :key="member.id"
+            :memberName="member.name"
+            :role="member.role"
+            :picture="member.pic"
+            :linkedIn="member.linkedIn"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -76,9 +78,9 @@ export default {
       },
       {
         id: 1,
-        name: 'Erlend van derg Burg',
+        name: 'Erlend Van Der Burg',
         pic: 'erlend.jpeg',
-        linkedIn: 'https://www.linkedin.com/in/daan-franssen/',
+        linkedIn: 'https://www.linkedin.com/in/erlend-van-der-burg-002820198/',
         role: 'Accountant, Compliance, Finance',
       },
       {
@@ -97,10 +99,10 @@ export default {
       },
       {
         id: 4,
-        name: 'Martijn van der Kraats',
+        name: 'Martijn van de Kraats',
         pic: 'placeholder.jpeg',
         linkedIn: 'https://www.linkedin.com/in/martijn-van-de-kraats-171970193/',
-        role: 'Product Owner, Blockchain Ecosystem development',
+        role: 'Blockchain Ecosystem development, Product Owner, ',
       },
       {
         id: 5,
