@@ -4,15 +4,17 @@
     <div
       class="
         absolute
-        inset-x-12 inset-y-44
+        inset-x-0 inset-y-44
+        sm:inset-x-12
         md:inset-x-24
         3xl:inset-x-44
         bottom-0
         bg-white
         rounded-t-large
         bg-opacity-90
-        p-16
-        overflow-y-scroll
+        p-12
+        md:p-16
+        overflow-y-auto
         space-y-12
       "
     >
