@@ -56,7 +56,7 @@ module.exports = {
         large: '2rem',
       },
       backgroundImage: (theme) => ({
-        'auth-background': "url('@/assets/img/wave.svg')",
+        wave: "url('@/assets/img/wave.svg')",
       }),
       keyframes: {
         'fade-in-down': {
