@@ -1,6 +1,8 @@
 <template>
   <div class="flex justify-between items-center">
-    <img :src="require('~/assets/img/logo.svg')" alt="Stutor logo" class="w-36 block" />
+    <nuxt-link to="/">
+      <img :src="require('~/assets/img/logo.svg')" alt="Stutor logo" class="w-36 block" />
+    </nuxt-link>
     <nav class="hidden md:block">
       <navigation :items="navigation" class="flex space-x-16" />
     </nav>
@@ -13,7 +15,7 @@
         absolute
         md:hidden
         inset-x-12
-        top-32
+        top-36
         p-4
         rounded-lg
         shadow-lg

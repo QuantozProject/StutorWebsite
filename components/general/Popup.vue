@@ -11,9 +11,9 @@
         p-8
         space-y-4
         rounded-lg
-        bg-white
         shadow-xl
         animate-expand-small-big
+        bg-white
       "
     >
       <h1>{{ title }}</h1>
