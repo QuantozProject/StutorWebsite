@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-between items-center">
-    <h2>Stutor</h2>
+    <img :src="require('~/assets/img/logo.svg')" alt="Stutor logo" class="w-36 block" />
     <nav class="hidden md:block">
       <navigation :items="navigation" class="flex space-x-16" />
     </nav>

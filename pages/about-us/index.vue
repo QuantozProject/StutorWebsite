@@ -4,18 +4,17 @@
     <div
       class="
         absolute
+        bottom-0
         inset-x-0 inset-y-44
         sm:inset-x-12
         md:inset-x-24
         3xl:inset-x-44
-        bottom-0
-        bg-white
-        rounded-t-large
-        bg-opacity-90
-        p-12
         md:p-16
-        overflow-y-auto
+        p-12
         space-y-12
+        overflow-y-auto
+        rounded-t-large
+        bg-opacity-90 bg-white
       "
     >
       <div class="flex justify-between items-start gap-22 xl:gap-44 animate-fade-in-down-mob">
