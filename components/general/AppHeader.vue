@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-between items-center">
     <nuxt-link to="/">
-      <img :src="require('~/assets/img/logo.svg')" alt="Stutor logo" class="w-36 block" />
+      <img :src="require('~/assets/img/logo.png')" alt="Stutor logo" class="w-36 block" />
     </nuxt-link>
     <nav class="hidden md:block">
       <navigation :items="navigation" class="flex space-x-16" />
