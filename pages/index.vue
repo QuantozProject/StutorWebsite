@@ -7,7 +7,7 @@
           <span class="font-extralight">Peer to peer leren</span>
           <br />via personaliseren
         </h1>
-        <p>Lorem Ipsum is simply dummy text of the printing <br />and typesetting industry.</p>
+        <p>Have Stutor always around. Download </br>the app now.</p>
         <div class="md:inline-flex md:space-x-4">
           <download-button
             v-for="btn in downloadButtons"
